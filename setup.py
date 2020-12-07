@@ -20,11 +20,11 @@ SETUP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 setup(
     name=PACKAGE_NAME,
-    version='0.1.2',
+    version='0.1.3',
     packages=find_packages(),
     package_data={PACKAGE_DIR: ['*.ttf', '*.txt', 'AUTHORS', 'BUGS', 'LICENSE',
                                 'NEWS', 'README.md']},
-    install_requires=['rinohtype>=0.4.3'],
+    install_requires=['rinohtype'],
     entry_points={
         'rinoh.typefaces':
             ['{} = {}:typeface'.format(ENTRY_POINT_NAME, PACKAGE_DIR)]
